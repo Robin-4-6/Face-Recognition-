@@ -1,0 +1,10 @@
+deepface
+faiss-cpu
+gradio
+numpy
+pandas
+pillow
+matplotlib
+torch
+torchvision
+scikit-learn
