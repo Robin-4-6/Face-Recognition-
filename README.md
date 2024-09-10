@@ -40,9 +40,6 @@ This project is a face recognition system that uses the Labeled Faces in the Wil
 
 
 
-## Project Files
 
-- `face_embeddings.npy`: Contains the face embeddings of the LFW dataset.
-- `face_labels.npy`: Contains the labels corresponding to the face embeddings.
-- `faiss_index.bin`: The FAISS index file for similarity search.
-- `face_recognition.py`: The main script that includes dataset loading, embedding extraction, FAISS indexing, and Gradio interface setup.
+
+
