@@ -21,22 +21,33 @@ This project is a face recognition system that uses the Labeled Faces in the Wil
 5. **User Interface**:
    - The Gradio interface allows users to upload a face image and receive recognition results.
 
-## How to Use
 
-1. **Install Required Libraries**:
-   - Ensure you have the necessary libraries installed. You can install them using the following commands:
+## Files Included
+- `Project.py`: Contains the entire code for the project.
+- `requirements.txt`: Lists the libraries required to run the project.
+- `Project.ipynb`: A Jupyter Notebook version of the project for interactive use.
+
+## How to Use
+1. **Set Up Your Environment**
+   - Install the necessary libraries using the `requirements.txt` file:
      ```bash
-     pip install deepface
-     pip install faiss-cpu
-     pip install gradio
+     pip install -r requirements.txt
      ```
 
-2. **Run the Code**:
-   - Load the dataset, extract embeddings, create the FAISS index, and build the Gradio interface.
+2. **Run the Script**
+   - Execute the `Project.py` script to start the Gradio interface:
+     ```bash
+     python Project.py
+     ```
+   - The script will generate a link for the Gradio interface. This link will expire in 72 hours. You need to run the script again to generate a new link if needed.
 
-3. **Upload an Image**:
-   - Use the Gradio interface to upload a face image. The system will analyze the image and display the name of the most similar known individual along with the similarity score.
-     -Note that the Gradio app will generate a link for accessing the interface. This link expires in 72 hours. After this period, you will need to execute the code again to generate a new link.
+3. **Using the Interface**
+   - Upload any image, and the system will analyze it to find its closest match from the famous individuals. 
+   - The system generates all necessary data during execution, including embeddings and FAISS index, so no pre-uploaded model or dataset is needed.
+
+## Note
+The project was developed and tested using Google Colab, which is why the code is contained in a single file. 
+
 
 
 
